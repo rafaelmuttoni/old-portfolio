@@ -60,11 +60,30 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1;
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
+    color: #F8F8F2;
   }
   img {
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  body {
+    --background: #282A36;
+    --navBackground: #21222C;
+    --texts: #F8F8F2;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #21222C;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: #6272A4;
   }
 
 `
