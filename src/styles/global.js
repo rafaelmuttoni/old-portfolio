@@ -73,10 +73,13 @@ const GlobalStyles = createGlobalStyle`
     --navBackground: #21222C;
     --icons: #6272A4;
     --texts: #F8F8F2;
+    --pink: #FF92DF;
+    --purple: #BD93F9;
+    --green: #50FA7B;
   }
 
   body::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.75rem;
   }
 
   body::-webkit-scrollbar-track {
