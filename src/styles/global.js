@@ -71,6 +71,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     --background: #282A36;
     --navBackground: #21222C;
+    --icons: #6272A4;
     --texts: #F8F8F2;
   }
 
