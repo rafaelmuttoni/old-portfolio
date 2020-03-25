@@ -5,4 +5,7 @@ export const NavbarWrapper = styled.nav`
   height: 100vh;
   position: fixed;
   background: var(--navBackground);
+  &:hover {
+    width: 16rem;
+  }
 `
