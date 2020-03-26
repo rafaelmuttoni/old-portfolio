@@ -46,6 +46,11 @@ export const IconsUl = styled.ul`
 `
 
 export const IconsLi = styled.li`
+  ${media.lessThan('medium')`
+      justify-content: center;
+      height: 4rem;
+    `}
+  height: 5rem;
   width: 100%;
   &:last-child {
     margin-top: auto;
@@ -55,12 +60,12 @@ export const IconsLi = styled.li`
 export const IconsLink = styled(AniLink)`
   ${media.lessThan('medium')`
     justify-content: center;
-    height: 4rem;
   `}
   color: var(--icons);
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 100%;
+  width: 100%;
   text-decoration: none;
   &:hover {
     background: var(--background);
