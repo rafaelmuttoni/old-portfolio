@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>This is Muttoni's starter for Gatsby Projects.</h1>
+    <h1 style={{textAlign: "center", lineHeight: '40rem', fontSize: '5rem'}}>Home Page</h1>
     
   </Layout>
 )
