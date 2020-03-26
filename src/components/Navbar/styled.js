@@ -11,14 +11,12 @@ export const NavbarWrapper = styled.nav`
     &:hover {
       width: 16rem;
     }
-    border-right: 1px solid var(--border)
   `}
 
   ${media.lessThan('medium')`
     bottom: 0;
     width: 100vw;
     height: 4rem;
-    border-top: 1px solid var(--border);
   `}
 
   position: fixed;
