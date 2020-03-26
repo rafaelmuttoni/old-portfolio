@@ -16,9 +16,9 @@ export const NavbarWrapper = styled.nav`
 
   ${media.lessThan('medium')`
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 4rem;
-    border-top: 1px solid var(--border)
+    border-top: 1px solid var(--border);
   `}
 
   position: fixed;
@@ -34,6 +34,7 @@ export const IconsUl = styled.ul`
 
   ${media.lessThan('medium')`
     flex-direction: row;
+    width: 100%;
   `}
 
   list-style: none;
