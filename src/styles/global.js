@@ -72,6 +72,7 @@ const GlobalStyles = createGlobalStyle`
     --icons: #6272A4;
     --texts: #F8F8F2;
     --hoverIcons: #F8F8F2;
+    --border: #2b2b38;
   }
 
   body.light {
@@ -80,6 +81,7 @@ const GlobalStyles = createGlobalStyle`
     --icons: #555555;
     --texts: #21222C;
     --hoverIcons: #21222C;
+    --border: #e3e3e6;
   }
 
   /* ${media.greaterThan('medium')`
