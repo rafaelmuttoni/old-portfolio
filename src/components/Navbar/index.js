@@ -25,7 +25,7 @@ const Navbar = () => {
 
           return (
             <S.IconsLi key={i}>
-              <S.IconsLink to={link.url} duration={0.8} cover bg={isDarkMode ? '#21222C' : '#F0F0F3'}>
+              <S.IconsLink activeClassName="active" to={link.url} duration={0.8} cover bg={isDarkMode ? '#21222C' : '#F0F0F3'}>
                 <S.IconDiv>
                   <Icon />
                 </S.IconDiv>

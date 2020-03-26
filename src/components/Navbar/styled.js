@@ -68,6 +68,10 @@ export const IconsLink = styled(AniLink)`
     background: var(--background);
     color: var(--hoverIcons);
   }
+  &.active {
+    background: var(--background);
+    color: var(--hoverIcons);
+  }
 `
 export const ThemeLink = styled(Link)`
   ${media.lessThan('medium')`
