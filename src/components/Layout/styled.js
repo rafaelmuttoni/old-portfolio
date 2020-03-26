@@ -6,7 +6,8 @@ export const LayoutWrapper = styled.section`
 `
 
 export const LayoutMain = styled.main`
-  background: #282A36;
+  color: var(--texts);
+  background: var(--background);
   margin-left: 5rem;
 
   ${media.lessThan('medium')`

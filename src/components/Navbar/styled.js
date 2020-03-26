@@ -60,7 +60,7 @@ export const IconsLink = styled(Link)`
   text-decoration: none;
   &:hover {
     background: var(--background);
-    color: var(--green);
+    color: var(--hoverIcons);
   }
 `
 
@@ -77,12 +77,13 @@ export const IconText = styled.p`
   `}
 
   font-size: 1.2rem;
+  font-weight: 200;
   color: var(--icons);
   display: none;
   margin-left: 1rem;
 
 
   ${IconsLink}:hover & {
-    color: var(--green);
+    color: var(--hoverIcons);
   }
 `
