@@ -28,33 +28,41 @@ export const IconsUl = styled.ul`
 
   ${media.greaterThan('medium')`
     flex-direction: column;
+    justify-content: center;
   `}
 
   ${media.lessThan('medium')`
     flex-direction: row;
     width: 100%;
+    justify-content: space-between;
   `}
 
   list-style: none;
-  padding: 0;
+  
   margin: 0;
   display: flex;
-  justify-content: center;
   
+  padding: 0;
   align-items: center;
   height: 100%;
 `
 
 export const IconsLi = styled.li`
+
+  height: 5rem;
+  width: 100%;
+
   ${media.lessThan('medium')`
       justify-content: center;
       height: 4rem;
-    `}
-  height: 5rem;
-  width: 100%;
-  &:last-child {
-    margin-top: auto;
+      width: 4rem;
+  `}
+
+  ${media.greaterThan('medium')`
+    &:last-child {
+      margin-top: auto;
   }
+  `}
 `
 
 export const IconsLink = styled(AniLink)`
@@ -79,12 +87,12 @@ export const IconsLink = styled(AniLink)`
 export const ThemeLink = styled(Link)`
   ${media.lessThan('medium')`
     justify-content: center;
-    height: 4rem;
   `}
   color: var(--icons);
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 100%;
+  width: 100%;
   text-decoration: none;
   &:hover {
     background: var(--background);
@@ -94,7 +102,9 @@ export const ThemeLink = styled(Link)`
 
 export const IconDiv = styled.div`
   min-width: 2rem;
-  margin: 0 1.5rem;
+  ${media.greaterThan('medium')`
+    margin: 0 1.5rem;  
+  `}
 `
 
 export const IconText = styled.p`
