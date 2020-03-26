@@ -16,7 +16,7 @@ export const NavbarWrapper = styled.nav`
   ${media.lessThan('medium')`
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: 4rem;
   `}
 
   position: fixed;
@@ -57,7 +57,7 @@ export const IconsLink = styled(AniLink)`
   color: var(--icons);
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
   text-decoration: none;
   &:hover {
     background: var(--background);
@@ -71,7 +71,7 @@ export const ThemeLink = styled(Link)`
   color: var(--icons);
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
   text-decoration: none;
   &:hover {
     background: var(--background);
@@ -89,6 +89,9 @@ export const IconText = styled.p`
     ${NavbarWrapper}:hover & {
       display: block;
     }  
+    ${IconsLink}:hover & {
+      color: var(--hoverIcons);
+    }
   `}
 
   font-size: 1.2rem;
@@ -98,7 +101,4 @@ export const IconText = styled.p`
   margin-left: 1rem;
 
 
-  ${IconsLink}:hover & {
-    color: var(--hoverIcons);
-  }
 `

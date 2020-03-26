@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import media from 'styled-media-query'
 
 const GlobalStyles = createGlobalStyle`
 
@@ -80,18 +81,21 @@ const GlobalStyles = createGlobalStyle`
     --texts: #21222C;
     --hoverIcons: #21222C;
   }
+  
+  ${media.greaterThan('medium')`
+    body::-webkit-scrollbar {
+      width: 0.75rem;
+    }
 
-  body::-webkit-scrollbar {
-    width: 0.75rem;
-  }
+    body::-webkit-scrollbar-track {
+      background: var(--navBackground);
+    }
 
-  body::-webkit-scrollbar-track {
-    background: var(--navBackground);
-  }
+    body::-webkit-scrollbar-thumb {
+      background: var(--icons);
+    }  
+  `}
 
-  body::-webkit-scrollbar-thumb {
-    background: var(--icons);
-  }
 
 `
 
