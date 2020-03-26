@@ -53,11 +53,12 @@ export const IconsLi = styled.li`
 export const IconsLink = styled(AniLink)`
   ${media.lessThan('medium')`
     justify-content: center;
+    height: 4rem;
   `}
   color: var(--icons);
   display: flex;
   align-items: center;
-  height: 4rem;
+  height: 5rem;
   text-decoration: none;
   &:hover {
     background: var(--background);
@@ -67,11 +68,12 @@ export const IconsLink = styled(AniLink)`
 export const ThemeLink = styled(Link)`
   ${media.lessThan('medium')`
     justify-content: center;
+    height: 4rem;
   `}
   color: var(--icons);
   display: flex;
   align-items: center;
-  height: 4rem;
+  height: 5rem;
   text-decoration: none;
   &:hover {
     background: var(--background);
