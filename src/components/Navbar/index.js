@@ -25,7 +25,7 @@ const Navbar = () => {
 
           return (
             <S.IconsLi key={i}>
-              <S.IconsLink to={link.url}>
+              <S.IconsLink to={link.url} duration={0.8} cover bg={isDarkMode ? '#21222C' : '#F0F0F3'}>
                 <S.IconDiv>
                   <Icon />
                 </S.IconDiv>
@@ -35,14 +35,14 @@ const Navbar = () => {
           )
         })}
         <S.IconsLi>
-          <S.IconsLink onClick={() => {
+          <S.ThemeLink onClick={() => {
             window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
           }}>
             <S.IconDiv>
               {isDarkMode ? <Dark /> : <Light />}
             </S.IconDiv>
             <S.IconText>Theme</S.IconText>
-          </S.IconsLink>
+          </S.ThemeLink>
         </S.IconsLi>
       </S.IconsUl>
     </S.NavbarWrapper>

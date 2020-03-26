@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export const NavbarWrapper = styled.nav`
   ${media.greaterThan('medium')`
@@ -49,7 +50,21 @@ export const IconsLi = styled.li`
   }
 `
 
-export const IconsLink = styled(Link)`
+export const IconsLink = styled(AniLink)`
+  ${media.lessThan('medium')`
+    justify-content: center;
+  `}
+  color: var(--icons);
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  text-decoration: none;
+  &:hover {
+    background: var(--background);
+    color: var(--hoverIcons);
+  }
+`
+export const ThemeLink = styled(Link)`
   ${media.lessThan('medium')`
     justify-content: center;
   `}
