@@ -81,8 +81,8 @@ const GlobalStyles = createGlobalStyle`
     --texts: #21222C;
     --hoverIcons: #21222C;
   }
-  
-  ${media.greaterThan('medium')`
+
+  /* ${media.greaterThan('medium')`
     body::-webkit-scrollbar {
       width: 0.75rem;
     }
@@ -94,7 +94,7 @@ const GlobalStyles = createGlobalStyle`
     body::-webkit-scrollbar-thumb {
       background: var(--icons);
     }  
-  `}
+  `} */
 
 
 `
