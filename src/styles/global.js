@@ -2,8 +2,6 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
   /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -58,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     line-height: 1;
     font-size: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     
   }
   img {
