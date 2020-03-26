@@ -59,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1;
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
-    color: #F8F8F2;
+    
   }
   img {
     display: block;
@@ -72,7 +72,7 @@ const GlobalStyles = createGlobalStyle`
     --navBackground: #21222C;
     --icons: #6272A4;
     --texts: #F8F8F2;
-    --hoverIcons: #50FA7B;
+    --hoverIcons: #F8F8F2;
   }
 
   body.light {
@@ -80,7 +80,7 @@ const GlobalStyles = createGlobalStyle`
     --navBackground: #F0F0F3;
     --icons: #555555;
     --texts: #21222C;
-    --hoverIcons: #BD93F9;
+    --hoverIcons: #21222C;
   }
 
   body::-webkit-scrollbar {
