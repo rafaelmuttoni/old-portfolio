@@ -40,6 +40,7 @@ export const IconsUl = styled.ul`
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: center;
   
   align-items: center;
   height: 100%;
