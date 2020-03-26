@@ -56,7 +56,6 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    background: #282A36;
     line-height: 1;
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -68,14 +67,20 @@ const GlobalStyles = createGlobalStyle`
     height: auto;
   }
 
-  body {
+  body.dark {
     --background: #282A36;
     --navBackground: #21222C;
     --icons: #6272A4;
     --texts: #F8F8F2;
-    --pink: #FF92DF;
-    --purple: #BD93F9;
-    --green: #50FA7B;
+    --hoverIcons: #50FA7B;
+  }
+
+  body.light {
+    --background: #FFF;
+    --navBackground: #F0F0F3;
+    --icons: #555555;
+    --texts: #21222C;
+    --hoverIcons: #BD93F9;
   }
 
   body::-webkit-scrollbar {
@@ -83,11 +88,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body::-webkit-scrollbar-track {
-    background: #21222C;
+    background: var(--navBackground);
   }
 
   body::-webkit-scrollbar-thumb {
-    background: #6272A4;
+    background: var(--icons);
   }
 
 `
