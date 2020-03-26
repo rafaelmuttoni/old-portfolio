@@ -55,7 +55,7 @@ export const IconsLi = styled.li`
   ${media.lessThan('medium')`
       justify-content: center;
       height: 4rem;
-      width: 4rem;
+      width: 100%;
   `}
 
   ${media.greaterThan('medium')`
