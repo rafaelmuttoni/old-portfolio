@@ -12,6 +12,7 @@ export const WelcomeWrapper = styled.div`
 `
 export const WelcomeText = styled.p`
   font-size: 1.5rem;
+  font-weight: 400;
   line-height: 1.5;
   &.strong {
     font-weight: 600;
@@ -25,6 +26,17 @@ export const WelcomeText = styled.p`
       font-size: 1.4rem;
     }
   `}
+
+  transition: opacity 2000ms ease;
+
+  &.hidden {
+    opacity: 0;
+  }
+
+  &.display {
+    opacity: 1;
+  }
+
 `
 
 export const WelcomeLink = styled(AniLink)`
