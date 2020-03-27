@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Here you type the website's title.`,
-    description: `Here you type the website's description.`,
-    author: `@muttonidigital`,
+    title: `Rafael Muttoni - Front-End Developer`,
+    description: `Currently looking for great projects to work on.`,
+    author: `@rafaelmuttoni`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
