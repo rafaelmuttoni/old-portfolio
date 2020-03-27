@@ -2,11 +2,12 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
+import Welcome from "../components/Welcome"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1 style={{textAlign: "center", lineHeight: '40rem', fontSize: '5rem'}}>Home Page</h1>
+    <Welcome />
     
   </Layout>
 )
