@@ -10,9 +10,15 @@ export const LayoutMain = styled.main`
   width: 100%;
   color: var(--texts);
   background: var(--background);
-  margin-left: 5rem;
+  padding-left: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 
   ${media.lessThan('medium')`
-    margin: 0;
+    padding-left: 0;
+    padding-bottom: 4rem;
   `}
 `
