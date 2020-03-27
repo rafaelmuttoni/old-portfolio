@@ -1,11 +1,15 @@
 const links = [
   {
-    label: 'Github',
-    url: 'https://github.com/rafaelmuttoni'
+    label: 'Email',
+    url: 'mailto:hi@muttonidigital.com'
   },
   {
     label: 'Linkedin',
     url: 'https://www.linkedin.com/in/rafaelmuttoni/'
+  },
+  {
+    label: 'Github',
+    url: 'https://github.com/rafaelmuttoni'
   },
   {
     label: 'Whatsapp',

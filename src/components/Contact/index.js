@@ -6,13 +6,10 @@ import links from './content'
 
 const Contact = () => (
   <S.ContactWrapper>
-    <S.PageTitle>Get in touch</S.PageTitle>
-    <S.ContactText>If you wanna get in touch there are 2 main options:</S.ContactText>
-    <S.ContactText>• Send an e-mail to <S.ContactLink href="mailto:hi@muttoni.dev">hi@muttoni.dev</S.ContactLink>;</S.ContactText>
-    <S.ContactText>• Contact me through my social medias:</S.ContactText>
+    <S.PageTitle>Get in touch <span role="img" aria-label="Envelope">📩</span></S.PageTitle>
     {links.map((link) => {
       const Icon = Icons[link.label]
-      return <S.ContactIcon><Icon /></S.ContactIcon>
+    return <S.ContactLink href={link.url} target="_blank"><S.ContactIcon><Icon /></S.ContactIcon><S.ContactText className="options">{link.label}</S.ContactText></S.ContactLink>
     })}
   </S.ContactWrapper>
 )
