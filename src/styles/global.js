@@ -83,8 +83,8 @@ const GlobalStyles = createGlobalStyle`
     --icons: #555555;
     --hoverIcons: #21222C;
     --texts: #21222C;
-    --links: #6272A4;
-    --hoverLinks: #BD93F9;
+    --links: #555555;
+    --hoverLinks: #FF6E6E;
     --border: #e3e3e6;
   }
 
