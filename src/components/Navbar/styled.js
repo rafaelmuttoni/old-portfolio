@@ -84,7 +84,7 @@ export const IconsLink = styled(AniLink)`
     color: var(--hoverIcons);
   }
 `
-export const ThemeLink = styled(Link)`
+export const ThemeDiv = styled.div`
   ${media.lessThan('medium')`
     justify-content: center;
   `}
@@ -94,6 +94,7 @@ export const ThemeLink = styled(Link)`
   height: 100%;
   width: 100%;
   text-decoration: none;
+  min-width: 2rem;
   &:hover {
     background: var(--background);
     color: var(--hoverIcons);
@@ -101,6 +102,13 @@ export const ThemeLink = styled(Link)`
 `
 
 export const IconDiv = styled.div`
+  min-width: 2rem;
+  ${media.greaterThan('medium')`
+    margin: 0 1.5rem;  
+  `}
+`
+
+export const ThemeSpan = styled.span`
   min-width: 2rem;
   ${media.greaterThan('medium')`
     margin: 0 1.5rem;  

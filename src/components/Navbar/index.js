@@ -35,14 +35,14 @@ const Navbar = () => {
           )
         })}
         <S.IconsLi>
-          <S.ThemeLink onClick={() => {
+          <S.ThemeDiv onClick={() => {
             window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
           }}>
-            <S.IconDiv>
+            <S.ThemeSpan>
               {isDarkMode ? <Dark /> : <Light />}
-            </S.IconDiv>
+            </S.ThemeSpan>
             <S.IconText>Theme</S.IconText>
-          </S.ThemeLink>
+          </S.ThemeDiv>
         </S.IconsLi>
       </S.IconsUl>
     </S.NavbarWrapper>
