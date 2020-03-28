@@ -69,26 +69,28 @@ const GlobalStyles = createGlobalStyle`
   body.dark {
     --background: #282A36;
     --navBackground: #21222C;
+    --texts: #F8F8F2;
     --icons: #6272A4;
     --hoverIcons: #F8F8F2;
-    --texts: #F8F8F2;
     --links: #6272A4;
-    --hoverLinks: #BD93F9;
-    --border: #2b2b38;
+    --hoverLinks: #a365fc;
+    --buttons: #6272A4;
+    --buttonsText: #F8F8F2;
   }
 
   body.light {
     --background: #FFF;
     --navBackground: #F0F0F3;
+    --texts: #21222C;
     --icons: #555555;
     --hoverIcons: #21222C;
-    --texts: #21222C;
     --links: #555555;
-    --hoverLinks: #FF6E6E;
-    --border: #e3e3e6;
+    --hoverLinks: #ff0f0f;
+    --buttons: #555555;
+    --buttonsText: #F8F8F2;
   }
 
-  /* ${media.greaterThan('medium')`
+  ${media.greaterThan('medium')`
     body::-webkit-scrollbar {
       width: 0.75rem;
     }
@@ -100,7 +102,7 @@ const GlobalStyles = createGlobalStyle`
     body::-webkit-scrollbar-thumb {
       background: var(--icons);
     }  
-  `} */
+  `}
 
 
 `
