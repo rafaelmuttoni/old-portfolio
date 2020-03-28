@@ -1,7 +1,7 @@
 const links = [
   {
     label: 'Email',
-    url: 'mailto:hi@muttonidigital.com'
+    url: 'mailto:hi@muttoni.dev'
   },
   {
     label: 'Linkedin',

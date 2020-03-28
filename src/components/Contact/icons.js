@@ -7,7 +7,7 @@ const Icons = {
   Email,
   Linkedin,
   Github,
-  Whatsapp
+  Whatsapp,
 }
 
 export default Icons

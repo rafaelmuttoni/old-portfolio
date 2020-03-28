@@ -6,7 +6,7 @@ import links from './content'
 
 const Contact = () => (
   <S.ContactWrapper>
-    <S.PageTitle>Get in touch <span role="img" aria-label="Envelope">📩</span></S.PageTitle>
+    <S.PageTitle>Get in touch <span role="img" aria-label="Phone with arrow">📲</span></S.PageTitle>
     {links.map((link) => {
       const Icon = Icons[link.label]
     return <S.ContactLink href={link.url} target="_blank"><S.ContactIcon><Icon /></S.ContactIcon><S.ContactText className="options">{link.label}</S.ContactText></S.ContactLink>
