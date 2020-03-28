@@ -46,7 +46,7 @@ export const ContactLink = styled.a`
   display: flex;
   align-items: center;
   &:hover {
-    color: var(--hoverLinks)
+    color: var(--icons)
   }
 `
 
@@ -56,6 +56,6 @@ export const ContactIcon = styled.div`
   width: 2rem;
   color: var(--buttonText);
   ${ContactLink}:hover & {
-    color: var(--hoverLinks);
+    color: var(--icons);
   }
 `
