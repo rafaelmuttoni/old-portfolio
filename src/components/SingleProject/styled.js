@@ -7,7 +7,7 @@ export const ContentWrapper = styled.div`
 
 export const DevicesWrapper = styled.div`
   display: flex;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 `
 
 export const DesktopWrapper = styled.div`
