@@ -1,19 +1,21 @@
 const links = [
   {
-    label: 'Email',
-    url: 'mailto:hi@muttoni.dev'
-  },
-  {
     label: 'Linkedin',
-    url: 'https://www.linkedin.com/in/rafaelmuttoni/'
+    text: 'Linkedin',
+    url: 'https://www.linkedin.com/in/rafaelmuttoni/',
+    hex: '#0074B2' 
   },
   {
     label: 'Github',
-    url: 'https://github.com/rafaelmuttoni'
+    text: 'Github',
+    url: 'https://github.com/rafaelmuttoni',
+    hex: '#171515' 
   },
   {
     label: 'Whatsapp',
-    url: 'http://wa.me/5551996357235'
+    text: 'Whatsapp',
+    url: 'http://wa.me/5551996357235',
+    hex: '#25D366'
   },
 ]
 
