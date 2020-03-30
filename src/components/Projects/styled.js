@@ -22,16 +22,16 @@ export const ProjectsWrapper = styled.div`
 export const ProjectsTitle = styled.h1`
   font-size: 2.5rem;
   font-weight: 700;
-  border-left: 2px solid var(--buttons);
-  padding-left: 1rem;
+  /* border-left: 2px solid var(--buttons);
+  padding-left: 1rem; */
   padding-bottom: 0.8rem;
 `
 
 export const ProjectsDescription = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
-  border-left: 2px solid var(--buttons);
-  padding-left: 1rem;
+  /* border-bottom: 2px solid var(--buttons); */
+  /* padding-left: 1rem; */
   padding-bottom: 0.8rem;
 `
 
