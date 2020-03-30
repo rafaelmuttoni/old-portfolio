@@ -2,21 +2,19 @@ import React from 'react'
 
 import * as S from './styled'
 import Icons from './icons'
-import { Envelope } from '@styled-icons/fa-solid/Envelope'
 import links from './content'
 
 const Contact = () => (
   <S.ContactWrapper>
-    <S.PageTitle>contact info <span role="img" aria-label="Hand Pointing Down">👇</span></S.PageTitle>
-    <S.InfoWrapper>
-      <S.PageText>If you wanna get in touch you can either send me an e-mail <span role="img" aria-label="E-mail">📧</span></S.PageText>
-      <S.ContactLink href={'mailto:hi@muttoni.dev'} target="_blank"><S.ContactIcon><Envelope /></S.ContactIcon><S.ContactLabel>hi@muttoni.dev</S.ContactLabel></S.ContactLink>
-      <S.PageText>Or hit me up at my social medias <span role="img" aria-label="Mobile Phone">📱</span></S.PageText>
-      {links.map((link) => {
+    <S.ContactTitle>Contact info <span role="img" aria-label="Hand Pointing Down">👇</span></S.ContactTitle>
+    <S.ContactText>If you wanna talk to me about a project, maybe working together or just say hi you can either...</S.ContactText>
+      <S.ContactText><span role="img" aria-label="Check Mark">✅</span> Send an e-mail to <S.ContactLink href={'mailto:hi@muttoni.dev'} target="_blank">hi@muttoni.dev</S.ContactLink></S.ContactText> 
+      <S.SocialWrapper><S.ContactText><span role="img" aria-label="Check Mark">✅</span> Hit me up at my social medias</S.ContactText><S.IconWrapper>
+      {links.map(link => {
         const Icon = Icons[link.label]
-      return <S.ContactLink href={link.url} target="_blank"><S.ContactIcon><Icon /></S.ContactIcon><S.ContactLabel>{link.text}</S.ContactLabel></S.ContactLink>
+        return <S.ContactLink href={link.url}><S.ContactIcon><Icon/></S.ContactIcon></S.ContactLink>
       })}
-    </S.InfoWrapper>
+      </S.IconWrapper></S.SocialWrapper>
   </S.ContactWrapper>
 )
 

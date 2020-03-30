@@ -2,69 +2,67 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 export const ContactWrapper = styled.div`
-  padding-left: 1rem;
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1rem 1rem;
 
   ${media.lessThan('medium')`
-    padding: 0 2.5rem;
-    text-align: left;
+    padding: 2rem 1rem 1rem 1rem;
+    max-width: 90vw;
   `}
 `
 
-export const InfoWrapper = styled.div`
-  padding-left: 1rem;
-  border-left: 2px solid var(--buttons);
-  padding-top: 0.7rem;
-`
-
-
-export const PageTitle = styled.h1`
-  padding-bottom: 1.5rem;
+export const ContactTitle = styled.h1`
   font-size: 2.5rem;
-  font-weight: 300;
-
-  ${media.lessThan('medium')`
-    padding: 0 0 1.5rem;
-    text-align: left;
-    font-size: 1.7rem;
-  `}
+  font-weight: 700;
+  padding-bottom: 0.8rem;
 `
 
-export const PageText = styled.p`
-  padding-bottom: 1rem;
-  font-size: 1.1rem;
-`
-
-export const ContactLabel = styled.p`
-
-  font-size: 1.5rem;
+export const ContactText = styled.p`
+  line-height: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
-  line-height: 1.5;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
+  padding-bottom: 0.8rem;
 
-
-  ${media.lessThan('medium')`
-    font-size: 1.3rem;
-  `}
 `
 
 export const ContactLink = styled.a`
   text-decoration: none;
   font-weight: 600;
   color: var(--buttonText);
-  display: flex;
-  align-items: center;
   &:hover {
     color: var(--icons);
   }
 `
 
 export const ContactIcon = styled.div`
-  height: 2rem;
-  padding-bottom: 3rem;
+  padding-right: 0.5rem;
   width: 2rem;
   color: var(--buttonText);
   ${ContactLink}:hover & {
     color: var(--icons);
   }
+
+  ${media.lessThan('medium')`
+    width: 3rem;
+  `}
+`
+
+export const IconWrapper = styled.div`
+  display: flex;
+  padding-left: 0.5rem;
+  ${media.lessThan('medium')`
+    padding-left: 0;
+    align-self: center;
+  `}
+`
+
+export const SocialWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  ${media.lessThan('medium')`
+    flex-direction: column;
+  `}
 `
