@@ -2,11 +2,12 @@ import React from 'react'
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
+import About from '../components/About'
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About"/>
-    <h1 style={{textAlign: "center", lineHeight: '40rem', fontSize: '5rem'}}>About Page</h1>
+    <About />
   </Layout>
 )
 
