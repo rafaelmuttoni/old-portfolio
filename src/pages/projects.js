@@ -6,7 +6,7 @@ import Projects from "../components/Projects"
 
 const ProjectsPage = () => (
   <Layout>
-    <SEO title="Projects"/>
+    <SEO title="Projects" description="Check out the latest projects I've worked on."/>
     <Projects />
   </Layout>
 )
