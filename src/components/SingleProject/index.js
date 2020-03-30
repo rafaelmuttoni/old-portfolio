@@ -18,7 +18,7 @@ const SingleProject = ({title, url, description, tags, dkImg, mbImg}) => {
       <S.ProjectTitle target="_blank" href={url}>{title}</S.ProjectTitle>
       <S.ProjectDesription>{description}</S.ProjectDesription>
       <S.ProjectTagsList>
-        Tags: 
+        Technologies: 
         {tags.map(tag => <S.ProjectTagsItem>{tag}</S.ProjectTagsItem>)}
       </S.ProjectTagsList>
     </S.ContentWrapper>
