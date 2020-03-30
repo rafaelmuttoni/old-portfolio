@@ -51,7 +51,7 @@ const Projects = () => {
     <S.ContentWrapper>
       <S.ProjectsWrapper>
         <S.ProjectsTitle>web developer projects <span role="img" aria-label="Laptop">💻</span></S.ProjectsTitle>
-        <S.ProjectsDescription>latest projects I've worked on, you can <S.ProjectLink to="/contact" fade>check my social medias</S.ProjectLink> for more</S.ProjectsDescription>
+        <S.ProjectsDescription>latest projects I've worked on, you can <S.ProjectLink to="/contact" fade>check my social medias</S.ProjectLink> for more projects to come.</S.ProjectsDescription>
       </S.ProjectsWrapper>
       <SingleProject title="muttoni.dev" url="https://muttoni.dev" description="This website's purpose is to serve me as my Resume and Portfolio. Website made from scratch with gatsby-starter-default." tags={['Front-end', 'Javascript', 'HTML5', 'CSS', 'React', 'Gatsby', 'GraphQL', 'styled-components']} dkImg={portfolioDkImg} mbImg={portfolioMbImg}/>
       <SingleProject title="dynamicpoa.com" url="https://dynamicpoa.com" description="Website made for a company that offers solutions with Microsft's products (Office, PowerBI, etc.)." tags={['Front-end', 'Javascript', 'HTML5', 'CSS', 'React', 'Gatsby', 'Tailwindcss', 'Lottie']} dkImg={dynamicDkImg} mbImg={dynamicMbImg}/>
