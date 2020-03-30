@@ -131,14 +131,20 @@ export const PhoneContent = styled.div`
   height: 102%;
 `
 
-export const ProjectTitle = styled.h2`
+export const ProjectTitle = styled.a`
+  text-decoration: none;
   padding-left: 1rem;
   border-left: 2px solid var(--buttons);
   font-size: 1.8rem;
+  color: var(--buttonText);
 
   ${media.lessThan('medium')`
     line-height: 2.5rem;
   `}
+
+  &:hover {
+    color: var(--icons);
+  }
 `
 
 export const ProjectDesription = styled.p`

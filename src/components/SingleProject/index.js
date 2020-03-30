@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as S from './styled'
 
-const SingleProject = ({title, description, tags, dkImg, mbImg}) => {
+const SingleProject = ({title, url, description, tags, dkImg, mbImg}) => {
 
   return (
     <S.ContentWrapper>
@@ -15,7 +15,7 @@ const SingleProject = ({title, description, tags, dkImg, mbImg}) => {
           <S.PhoneContent>{mbImg}</S.PhoneContent>
         </S.PhoneWrapper>
       </S.DevicesWrapper>
-      <S.ProjectTitle>{title}</S.ProjectTitle>
+      <S.ProjectTitle target="_blank" href={url}>{title}</S.ProjectTitle>
       <S.ProjectDesription>{description}</S.ProjectDesription>
       <S.ProjectTagsList>
         Tags: 
