@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 export const ContentWrapper = styled.div`
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
 `
 
 export const DevicesWrapper = styled.div`
