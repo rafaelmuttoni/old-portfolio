@@ -1,4 +1,4 @@
-const techs = [
+export const techs = [
   {
     label: 'Front-end', 
   },
@@ -18,6 +18,9 @@ const techs = [
     label: 'Node', 
   },
   {
+    label: 'GraphQL', 
+  },
+  {
     label: 'Tailwindcss', 
   },
   {
@@ -25,4 +28,10 @@ const techs = [
   },
 ]
 
-export default techs
+export const projects = [
+  {
+    title: 'My portfolio',
+    description: `This website's purpose is to serve me as my Resume and Portfolio.`,
+    tags: ['Front-end', 'HTML5', 'Javascript', 'React', 'styled-components']
+  },
+]
