@@ -3,7 +3,7 @@ module.exports = {
     title: `Rafael Muttoni - Front-End Developer`,
     description: `Currently looking for great projects to work on.`,
     author: `@rafaelmuttoni`,
-    siteUrl: `https://muttoni.dev`
+    siteUrl: `https://rafaelmuttoni.com`
   },
   plugins: [
     `gatsby-plugin-transition-link`,
