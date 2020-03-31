@@ -12,7 +12,7 @@ const Contact = () => (
       <S.SocialWrapper><S.ContactText><span role="img" aria-label="Check Mark">✅</span> Hit me up at my social medias</S.ContactText><S.IconWrapper>
       {links.map(link => {
         const Icon = Icons[link.label]
-        return <S.ContactLink href={link.url}><S.ContactIcon><Icon/></S.ContactIcon></S.ContactLink>
+        return <S.ContactLink href={link.url} target="_blank"><S.ContactIcon><Icon/></S.ContactIcon></S.ContactLink>
       })}
       </S.IconWrapper></S.SocialWrapper>
   </S.ContactWrapper>
