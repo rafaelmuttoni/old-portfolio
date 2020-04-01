@@ -5,8 +5,8 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 export const WelcomeWrapper = styled.div`
   text-align: center;
 
-  ${media.lessThan('medium')`
-    padding: 0 2.5rem;
+  ${media.lessThan('large')`
+    max-width: 80vw;
     text-align: left;
   `}
 `
@@ -19,7 +19,7 @@ export const WelcomeText = styled.p`
     font-size: 1.7rem;
   }
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     font-size: 1.2rem;
     &.strong {
       font-weight: 600;

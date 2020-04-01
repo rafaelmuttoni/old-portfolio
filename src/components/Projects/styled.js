@@ -7,7 +7,7 @@ export const ContentWrapper = styled.div`
   flex-direction: column;
   padding: 4rem 1rem 1rem 1rem;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     padding: 2rem 1rem 1rem 1rem;
   `}
 `
@@ -17,6 +17,10 @@ export const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
+
+  ${media.lessThan('large')`
+    width: 80vw;
+  `}
 `
 
 export const ProjectsTitle = styled.h1`
@@ -25,6 +29,7 @@ export const ProjectsTitle = styled.h1`
   /* border-left: 2px solid var(--buttons);
   padding-left: 1rem; */
   padding-bottom: 0.8rem;
+
 `
 
 export const ProjectsDescription = styled.p`

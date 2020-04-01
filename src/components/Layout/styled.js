@@ -17,7 +17,7 @@ export const LayoutMain = styled.main`
   align-items: center;
   
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     padding-left: 0;
     padding-bottom: 4rem;
   `}

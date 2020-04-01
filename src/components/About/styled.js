@@ -7,9 +7,8 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   padding: 1rem 1rem 1rem 1rem;
 
-  ${media.lessThan('medium')`
-    padding: 2rem 1rem 1rem 1rem;
-    max-width: 90vw;
+  ${media.lessThan('large')`
+    max-width: 80vw;
   `}
 `
 
@@ -32,7 +31,7 @@ export const AboutSubtitle = styled.h2`
   font-size: 1.2rem;
   font-weight: 400;
   border-left: 2px solid var(--icons);
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
 `
@@ -40,6 +39,7 @@ export const AboutSubtitle = styled.h2`
 export const SkillsList = styled.ul`
   list-style: none;
   max-width: 60%;
+  padding-bottom: 0.8rem;
 
   ${media.lessThan('large') `
     max-width: 75%;

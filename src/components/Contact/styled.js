@@ -7,9 +7,8 @@ export const ContactWrapper = styled.div`
   flex-direction: column;
   padding: 1rem 1rem 1rem 1rem;
 
-  ${media.lessThan('medium')`
-    padding: 2rem 1rem 1rem 1rem;
-    max-width: 90vw;
+  ${media.lessThan('large')`
+    max-width: 85vw;
   `}
 `
 
@@ -44,7 +43,7 @@ export const ContactIcon = styled.div`
     color: var(--icons);
   }
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     width: 3rem;
   `}
 `
@@ -52,7 +51,7 @@ export const ContactIcon = styled.div`
 export const IconWrapper = styled.div`
   display: flex;
   padding-left: 0.5rem;
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     padding-left: 0;
     align-self: center;
   `}
@@ -62,7 +61,7 @@ export const SocialWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     flex-direction: column;
   `}
 `

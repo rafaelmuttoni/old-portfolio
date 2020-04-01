@@ -14,6 +14,7 @@ const About = () => (
     <S.SkillsList>
         {skills.map(skill => <S.SkillsItem>{skill}</S.SkillsItem>)}
     </S.SkillsList>
+    <S.AboutDescription>And what I don't know I can learn fast <span role="img" aria-label="Nerd face">🤓</span></S.AboutDescription>
   </S.AboutWrapper>
 )
 

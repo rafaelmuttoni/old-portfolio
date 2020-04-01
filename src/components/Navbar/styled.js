@@ -3,7 +3,7 @@ import media from 'styled-media-query'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export const NavbarWrapper = styled.nav`
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     top: 0;
     width: 5rem;
     height: 100vh;
@@ -12,25 +12,26 @@ export const NavbarWrapper = styled.nav`
     }
   `}
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     bottom: 0;
     width: 100vw;
-    height: 4rem;
+    height: 3.5rem;
   `}
 
   position: fixed;
   background: var(--navBackground);
   transition: width 200ms ease;
+  z-index: 10;
 `
 
 export const IconsUl = styled.ul`
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     flex-direction: column;
     justify-content: center;
   `}
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
@@ -51,13 +52,13 @@ export const IconsLi = styled.li`
   height: 5rem;
   width: 100%;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
       justify-content: center;
-      height: 4rem;
+      height: 3.5rem;
       width: 100%;
   `}
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     &:last-child {
       margin-top: auto;
   }
@@ -65,7 +66,7 @@ export const IconsLi = styled.li`
 `
 
 export const IconsLink = styled(AniLink)`
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     justify-content: center;
   `}
   color: var(--icons);
@@ -84,8 +85,9 @@ export const IconsLink = styled(AniLink)`
   }
 `
 export const ThemeDiv = styled.div`
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     justify-content: center;
+    min-width: 1.5rem;
   `}
   color: var(--icons);
   display: flex;
@@ -102,20 +104,26 @@ export const ThemeDiv = styled.div`
 
 export const IconDiv = styled.div`
   min-width: 2rem;
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     margin: 0 1.5rem;  
+  `}
+  ${media.lessThan('large')`
+    min-width: 1.5rem;  
   `}
 `
 
 export const ThemeSpan = styled.span`
   min-width: 2rem;
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     margin: 0 1.5rem;  
+  `}
+  ${media.lessThan('large')`
+    min-width: 1.5rem;  
   `}
 `
 
 export const IconText = styled.p`
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     ${NavbarWrapper}:hover & {
       display: block;
     }  
