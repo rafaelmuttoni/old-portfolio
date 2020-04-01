@@ -145,6 +145,12 @@ export const ProjectTitle = styled.a`
 
   ${media.lessThan('large')`
     line-height: 2rem;
+    font-size: 1.6rem;
+  `}
+
+  ${media.lessThan('medium')`
+    line-height: 2rem;
+    font-size: 1.4rem;
   `}
 
   &:hover {
@@ -156,6 +162,7 @@ export const ProjectDesription = styled.p`
   padding: 0.4rem 0 0.4rem 1rem;
   border-left: 2px solid var(--buttons);
   line-height: 2rem;
+
 
 `
 
