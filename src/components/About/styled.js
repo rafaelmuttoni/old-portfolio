@@ -9,6 +9,7 @@ export const AboutWrapper = styled.div`
 
   ${media.lessThan('large')`
     max-width: 80vw;
+    padding-top: 2rem;
   `}
 `
 
