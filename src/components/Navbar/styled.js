@@ -103,24 +103,26 @@ export const ThemeDiv = styled.div`
 `
 
 export const IconDiv = styled.div`
-  width: 32px;
-  min-width: 32px;
   ${media.greaterThan('large')`
-    margin: 0 1.5rem;  
+    margin: 0 1.5rem;
+    width: 32px;
+    min-width: 32px;  
   `}
   ${media.lessThan('large')`
-    min-width: 1.5rem;  
+    min-width: 24px;
+    width: 24px;
   `}
 `
 
 export const ThemeSpan = styled.span`
-  width: 32px;
-  min-width: 32px;
   ${media.greaterThan('large')`
-    margin: 0 1.5rem;  
+    margin: 0 1.5rem; 
+    width: 32px;
+    min-width: 32px; 
   `}
   ${media.lessThan('large')`
-    min-width: 1.5rem;  
+    min-width: 24px;
+    width: 24px;  
   `}
 `
 
