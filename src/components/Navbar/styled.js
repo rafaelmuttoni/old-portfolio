@@ -103,7 +103,8 @@ export const ThemeDiv = styled.div`
 `
 
 export const IconDiv = styled.div`
-  min-width: 2rem;
+  width: 32px;
+  min-width: 32px;
   ${media.greaterThan('large')`
     margin: 0 1.5rem;  
   `}
@@ -113,7 +114,8 @@ export const IconDiv = styled.div`
 `
 
 export const ThemeSpan = styled.span`
-  min-width: 2rem;
+  width: 32px;
+  min-width: 32px;
   ${media.greaterThan('large')`
     margin: 0 1.5rem;  
   `}
