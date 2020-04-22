@@ -6,7 +6,7 @@ import Welcome from "../components/Welcome"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" description="I'm a self-taught Front-End Developer currently looking for great projects."/>
+    <SEO title="Home" description="Hi, my name is Rafael Muttoni. I'm a self-taught Front-End Developer and this is my Website."/>
     <Welcome />
     
   </Layout>

@@ -6,7 +6,7 @@ import About from '../components/About'
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About me" description="Get to know more about me and the skills I work with."/>
+    <SEO title="About me" description="Get to know more about my background as a Developer and the skills I know and work with."/>
     <About />
   </Layout>
 )
