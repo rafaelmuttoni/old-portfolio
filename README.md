@@ -14,19 +14,20 @@
     <img alt="Repository issues" src="https://img.shields.io/github/issues/rafaelmuttoni/rafaelmuttoni.com.svg">
   </a>
 </p>
+
 <h1>
-    :computer: Rafael Muttoni - Portfolio Website 
+    Rafael Muttoni - Portfolio Website :computer:
 </h1>
 
 ## :rocket: Technologies
 
 This project is currently using the following technologies:
 
-- ⚡ Gatsby
-- ⚛️ React
-- 🌎 GraphQL
-- 🎨 styled-components
-- 🚀 Netlify
+- Gatsby
+- React
+- GraphQL
+- styled-components
+- Netlify
 
 ## :information_source: How To Use
 
