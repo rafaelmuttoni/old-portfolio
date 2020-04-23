@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="rafaelmuttoni.com" src="https://user-images.githubusercontent.com/55505025/80132639-5c540e80-8572-11ea-91fd-3c738ee07e7e.jpg" />
+    :computer: Rafael Muttoni - Portfolio Website 
 </h1>
 
 <p align="center">
