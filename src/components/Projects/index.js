@@ -6,7 +6,7 @@ import * as S from './styled'
 import SingleProject from '../SingleProject'
 
 const Projects = () => {
-  const { portfolioDesktop, portfolioMobile, dynamicDesktop, dynamicMobile, fabioDesktop, fabioMobile, compoundDesktop, compoundMobile } = useStaticQuery(
+  const { portfolioDesktop, portfolioMobile, dynamicDesktop, dynamicMobile, fabioDesktop, fabioMobile, pokemonDesktop, pokemonMobile, compoundDesktop, compoundMobile } = useStaticQuery(
     graphql`
       query {
         portfolioDesktop: file(relativePath: { eq: "portfolio.jpg" }) {
@@ -51,6 +51,20 @@ const Projects = () => {
             }
           }
         }
+        pokemonDesktop: file(relativePath: { eq: "pokemon.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 960, maxHeight: 468) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
+        pokemonMobile: file(relativePath: { eq: "pokemon_mobile.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 500, maxHeight: 882) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
         compoundDesktop: file(relativePath: { eq: "compound.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 960, maxHeight: 468) {
@@ -78,6 +92,9 @@ const Projects = () => {
   const fabioDkImg = <Img fluid={fabioDesktop.childImageSharp.fluid} />
   const fabioMbImg = <Img fluid={fabioMobile.childImageSharp.fluid} />
 
+  const pokemonDkImg = <Img fluid={pokemonDesktop.childImageSharp.fluid} />
+  const pokemonMbImg = <Img fluid={pokemonMobile.childImageSharp.fluid} />
+
   const compoundDkImg = <Img fluid={compoundDesktop.childImageSharp.fluid} />
   const compoundMbImg = <Img fluid={compoundMobile.childImageSharp.fluid} />
 
@@ -90,6 +107,7 @@ const Projects = () => {
       <SingleProject title="rafaelmuttoni.com" url="https://rafaelmuttoni.com" description="This website's purpose is to serve me as my Resume and Portfolio." tags={['Front-end', 'Javascript', 'HTML5', 'CSS', 'React', 'Gatsby', 'GraphQL', 'styled-components']} dkImg={portfolioDkImg} mbImg={portfolioMbImg}/>
       <SingleProject title="dynamicpoa.com" url="https://dynamicpoa.com" description="Website made for a company that offers solutions with Microsft's products (Office, PowerBI, etc.)." tags={['Front-end', 'Javascript', 'HTML5', 'CSS', 'React', 'Gatsby', 'Tailwindcss', 'Lottie']} dkImg={dynamicDkImg} mbImg={dynamicMbImg}/>
       <SingleProject title="cirurgiaminimanope.com.br" url="http://cirurgiaminimanope.com.br/" description="Website made for a Doctor, it's purpose is to inform about a specific foot surgery." tags={['Front-end', 'Wordpress', 'Elementor', 'Microthemer', 'HTML5', 'CSS']} dkImg={fabioDkImg} mbImg={fabioMbImg}/>
+      <SingleProject title="pokemonsearcher.app" url="https://pokemonsearcher.netlify.app/" description="A React App fetching data from PokéAPI." tags={['Front-end', 'Javascript', 'HTML5', 'CSS', 'React', 'Axios', 'styled-components']} dkImg={pokemonDkImg} mbImg={pokemonMbImg}/>
       <SingleProject title="juroscompostos.netlify.com" url="https://juroscompostos.netlify.com/" description="A compound interest calculator for your long term investments." tags={['Front-end', 'Javascript', 'HTML5', 'CSS', 'React', 'Gatsby', 'GraphQL', 'styled-components']} dkImg={compoundDkImg} mbImg={compoundMbImg}/>
     </S.ContentWrapper>
   )
