@@ -1,8 +1,9 @@
-<h1 align="center">
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6ec35d25-adc1-40e7-be1e-4d73e816d5fa/deploy-status)]
+<h1>
     :computer: Rafael Muttoni - Portfolio Website 
 </h1>
 
-<p align="center">
+<p>
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rafaelmuttoni/rafaelmuttoni.com.svg">
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rafaelmuttoni/rafaelmuttoni.com.svg">
@@ -20,7 +21,7 @@
 
 ## :rocket: Technologies
 
-This project was developed with the following technologies:
+This project is currently using the following technologies:
 
 - ⚡ Gatsby
 - ⚛️ React
