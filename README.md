@@ -19,6 +19,8 @@
     Rafael Muttoni - Portfolio Website :computer:
 </h1>
 
+<p>This website's purpose is to serve me as my Resume and Portfolio.</p>
+
 ## :rocket: Technologies
 
 This project is currently using the following technologies:
