@@ -90,8 +90,8 @@ export const GreenBall = styled.span`
 export const PhoneWrapper = styled.div`
   /* z-index: 10; */
   position: relative;
-  width: 9.05rem;
-  height: 18rem;
+  width: 12.5%;
+  height: 25%;
   margin: auto;
   border: 0.5rem var(--hoverIcons) solid;
   border-top-width: 1.875rem;
@@ -116,11 +116,11 @@ export const PhoneWrapper = styled.div`
     content: '';
     /* z-index: 10; */
     display: block;
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1rem;
+    height: 1rem;
     position: absolute;
     left: 51%;
-    bottom: -2.1rem;
+    bottom: -2rem;
     transform: translate(-50%, -50%);
     background: var(--background);
     border-radius: 50%;
