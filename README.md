@@ -28,6 +28,24 @@ This project was developed with the following technologies:
 - 🎨 styled-components
 - 🚀 Netlify
 
+## :information_source: How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16](https://nodejs.org/) or higher + [Yarn v1.13](https://yarnpkg.com/) or higher installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/rafaelmuttoni/rafaelmuttoni.com
+
+# Go into the repository
+$ cd rafaelmuttoni.com
+
+# Install dependencies
+$ yarn
+
+# Run gatsby server
+$ gatsby develop
+```
+
 ---
 
 :wave: [Get in touch!](https://www.linkedin.com/in/rafaelmuttoni/)
