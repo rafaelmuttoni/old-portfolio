@@ -7,7 +7,7 @@ const SingleProject = ({title, url, description, tags, dkImg, mbImg}) => {
   return (
     <S.ContentWrapper>
       <S.DevicesWrapper>
-        <S.DesktopWrapper>
+        <S.DesktopWrapper href={url} target="_blank">
           <S.ProjectBar><S.BallsWrapper><S.RedBall /><S.YellowBall /><S.GreenBall /></S.BallsWrapper></S.ProjectBar>
           {dkImg}
         </S.DesktopWrapper>
@@ -15,7 +15,7 @@ const SingleProject = ({title, url, description, tags, dkImg, mbImg}) => {
           <S.PhoneContent>{mbImg}</S.PhoneContent>
         </S.PhoneWrapper>
       </S.DevicesWrapper>
-      <S.ProjectTitle target="_blank" href={url}>{title}</S.ProjectTitle>
+      <S.ProjectTitle>{title}</S.ProjectTitle>
       <S.ProjectDesription>{description}</S.ProjectDesription>
       <S.ProjectTagsList>
         Technologies: 

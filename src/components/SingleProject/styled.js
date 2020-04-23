@@ -16,13 +16,19 @@ export const DevicesWrapper = styled.div`
   `}
 `
 
-export const DesktopWrapper = styled.div`
+export const DesktopWrapper = styled.a`
   width: 50%;
   height: 50%;
   box-shadow: 8px 8px 0 rgba(0,0,0,.15);
   ${media.lessThan('large')`
     width: 100%;
   `}
+
+  &:hover {
+    position: relative;
+    filter: opacity(0.7);
+    top: -5px;
+  }
 `
 
 export const ProjectBar = styled.div`
@@ -38,6 +44,7 @@ export const ProjectBar = styled.div`
   ${media.lessThan('large')`
     height: 0.75rem;
   `}
+
 `
 
 export const BallsWrapper = styled.div`
@@ -136,8 +143,7 @@ export const PhoneContent = styled.div`
   height: 102%;
 `
 
-export const ProjectTitle = styled.a`
-  text-decoration: none;
+export const ProjectTitle = styled.h2`
   padding-left: 1rem;
   border-left: 2px solid var(--buttons);
   font-size: 1.8rem;
@@ -152,10 +158,6 @@ export const ProjectTitle = styled.a`
     line-height: 2rem;
     font-size: 1.4rem;
   `}
-
-  &:hover {
-    color: var(--icons);
-  }
 `
 
 export const ProjectDesription = styled.p`
