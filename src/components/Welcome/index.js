@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from "react"
 
-import * as S from './styled'
+import * as S from "./styled"
 
 const Welcome = () => {
   const [firstVisible, setFirstVisible] = useState(false)
@@ -21,10 +21,36 @@ const Welcome = () => {
 
   return (
     <S.WelcomeWrapper>
-      <S.WelcomeText className={`strong ${firstVisible ? 'display' : 'hidden'}`}>Hi, my name is Rafael Muttoni! <span role="img" aria-label="Waving Hand">👋</span></S.WelcomeText>
-      <S.WelcomeText className={`${secondVisible ? 'display' : 'hidden'}`}>I'm a self-taught Front-End Developer and this is my website.</S.WelcomeText>
-      <S.WelcomeText className={`${thirdVisible ? 'display' : 'hidden'}`}>Currently looking for great projects to work on.</S.WelcomeText>
-      <S.WelcomeText className={`${fourthVisible ? 'display' : 'hidden'}`}>Want to work together? Let's <S.WelcomeLink to="/contact" fade>get in touch</S.WelcomeLink>.</S.WelcomeText>
+      <S.WelcomeText
+        className={`strong ${firstVisible ? "display" : "hidden"}`}
+      >
+        Hi, my name is Rafael Muttoni!{" "}
+        <span role="img" aria-label="Waving Hand">
+          👋
+        </span>
+      </S.WelcomeText>
+      <S.WelcomeText className={`${secondVisible ? "display" : "hidden"}`}>
+        I'm a self-taught Web Developer and this is my website.
+      </S.WelcomeText>
+      <S.WelcomeText className={`${thirdVisible ? "display" : "hidden"}`}>
+        Currently working on a web app called{" "}
+        <a
+          href="https://terapeutapro.com.br"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="terapeuta"
+        >
+          Terapeuta Pro
+        </a>
+        .
+      </S.WelcomeText>
+      <S.WelcomeText className={`${fourthVisible ? "display" : "hidden"}`}>
+        Want to say hi or talk about a project? Click{" "}
+        <S.WelcomeLink to="/contact" fade>
+          here
+        </S.WelcomeLink>
+        .
+      </S.WelcomeText>
     </S.WelcomeWrapper>
   )
 }

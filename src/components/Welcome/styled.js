@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import styled from "styled-components"
+import media from "styled-media-query"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const WelcomeWrapper = styled.div`
   text-align: center;
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     max-width: 80vw;
     text-align: left;
   `}
@@ -19,7 +19,7 @@ export const WelcomeText = styled.p`
     font-size: 1.7rem;
   }
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     font-size: 1.2rem;
     &.strong {
       font-weight: 600;
@@ -37,6 +37,13 @@ export const WelcomeText = styled.p`
     opacity: 1;
   }
 
+  a.terapeuta {
+    text-decoration: none;
+    color: #7e57c2;
+    &:hover {
+      color: #551a8b;
+    }
+  }
 `
 
 export const WelcomeLink = styled(AniLink)`
