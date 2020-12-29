@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from "styled-components"
+import media from "styled-media-query"
 
 export const ContactWrapper = styled.div`
   max-width: 60vw;
@@ -7,13 +7,13 @@ export const ContactWrapper = styled.div`
   flex-direction: column;
   padding: 1rem 1rem 1rem 1rem;
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     max-width: 85vw;
   `}
 `
 
 export const ContactTitle = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
   padding-bottom: 0.8rem;
 `
@@ -23,7 +23,6 @@ export const ContactText = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
   padding-bottom: 0.8rem;
-
 `
 
 export const ContactLink = styled.a`
@@ -43,7 +42,7 @@ export const ContactIcon = styled.div`
     color: var(--icons);
   }
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     width: 3rem;
   `}
 `
@@ -51,7 +50,7 @@ export const ContactIcon = styled.div`
 export const IconWrapper = styled.div`
   display: flex;
   padding-left: 0.5rem;
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     padding-left: 0;
     align-self: center;
   `}
@@ -61,7 +60,7 @@ export const SocialWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     flex-direction: column;
   `}
 `

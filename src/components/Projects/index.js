@@ -7,85 +7,61 @@ import SingleProject from "../SingleProject"
 
 const Projects = () => {
   const {
-    portfolioDesktop,
-    portfolioMobile,
-    dynamicDesktop,
-    dynamicMobile,
-    fabioDesktop,
-    fabioMobile,
-    pokemonDesktop,
-    pokemonMobile,
-    compoundDesktop,
-    compoundMobile,
+    terapeutapro,
+    zaply,
+    portfolio,
+    dynamic,
+    fabio,
+    pokemon,
+    compound,
   } = useStaticQuery(
     graphql`
       query {
-        portfolioDesktop: file(relativePath: { eq: "portfolio.jpg" }) {
+        terapeutapro: file(relativePath: { eq: "terapeutapro.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 960, maxHeight: 468) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
-        portfolioMobile: file(relativePath: { eq: "portfolio_mobile.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500, maxHeight: 882) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-        dynamicDesktop: file(relativePath: { eq: "dynamic.jpg" }) {
+        zaply: file(relativePath: { eq: "zaply.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 960, maxHeight: 468) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
-        dynamicMobile: file(relativePath: { eq: "dynamic_mobile.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500, maxHeight: 882) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-        fabioDesktop: file(relativePath: { eq: "fabio.jpg" }) {
+        portfolio: file(relativePath: { eq: "portfolio.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 960, maxHeight: 468) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
-        fabioMobile: file(relativePath: { eq: "fabio_mobile.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500, maxHeight: 882) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-        pokemonDesktop: file(relativePath: { eq: "pokemon.jpg" }) {
+        dynamic: file(relativePath: { eq: "dynamic.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 960, maxHeight: 468) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
-        pokemonMobile: file(relativePath: { eq: "pokemon_mobile.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500, maxHeight: 882) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-        compoundDesktop: file(relativePath: { eq: "compound.jpg" }) {
+        fabio: file(relativePath: { eq: "fabio.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 960, maxHeight: 468) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
-        compoundMobile: file(relativePath: { eq: "compound_mobile.jpg" }) {
+        pokemon: file(relativePath: { eq: "pokemon.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 500, maxHeight: 882) {
+            fluid(maxWidth: 960, maxHeight: 468) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
+        compound: file(relativePath: { eq: "compound.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 960, maxHeight: 468) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
@@ -94,20 +70,13 @@ const Projects = () => {
     `
   )
 
-  const portfolioDkImg = <Img fluid={portfolioDesktop.childImageSharp.fluid} />
-  const portfolioMbImg = <Img fluid={portfolioMobile.childImageSharp.fluid} />
-
-  const dynamicDkImg = <Img fluid={dynamicDesktop.childImageSharp.fluid} />
-  const dynamicMbImg = <Img fluid={dynamicMobile.childImageSharp.fluid} />
-
-  const fabioDkImg = <Img fluid={fabioDesktop.childImageSharp.fluid} />
-  const fabioMbImg = <Img fluid={fabioMobile.childImageSharp.fluid} />
-
-  const pokemonDkImg = <Img fluid={pokemonDesktop.childImageSharp.fluid} />
-  const pokemonMbImg = <Img fluid={pokemonMobile.childImageSharp.fluid} />
-
-  const compoundDkImg = <Img fluid={compoundDesktop.childImageSharp.fluid} />
-  const compoundMbImg = <Img fluid={compoundMobile.childImageSharp.fluid} />
+  const terapeutaproImg = <Img fluid={terapeutapro.childImageSharp.fluid} />
+  const zaplyImg = <Img fluid={zaply.childImageSharp.fluid} />
+  const portfolioImg = <Img fluid={portfolio.childImageSharp.fluid} />
+  const dynamicImg = <Img fluid={dynamic.childImageSharp.fluid} />
+  const fabioImg = <Img fluid={fabio.childImageSharp.fluid} />
+  const pokemonImg = <Img fluid={pokemon.childImageSharp.fluid} />
+  const compoundImg = <Img fluid={compound.childImageSharp.fluid} />
 
   return (
     <S.ContentWrapper>
@@ -119,13 +88,6 @@ const Projects = () => {
           </span>
         </S.ProjectsTitle>
         <S.ProjectsDescription>
-          <span className="outdated">
-            [completely outdated{" "}
-            <span role="img" aria-label="Sweating Face">
-              😅
-            </span>
-            ]
-          </span>{" "}
           projects I've worked on, you can{" "}
           <S.ProjectLink to="/contact" fade>
             check my social medias
@@ -133,6 +95,43 @@ const Projects = () => {
           for more projects to come.
         </S.ProjectsDescription>
       </S.ProjectsWrapper>
+
+      <SingleProject
+        title="Terapeuta Pro"
+        url="https://terapeutapro.com.br"
+        description="A software built to help therapists organize their schedule and finances."
+        tags={[
+          "Fullstack",
+          "Javascript",
+          "HTML5",
+          "CSS",
+          "React",
+          "Material UI",
+          "Node",
+          "Adonis",
+          "MySQL",
+        ]}
+        Img={terapeutaproImg}
+      />
+      <SingleProject
+        title="Recipe2Basket"
+        url="https://recipe2basket.com"
+        description="Worked with the team at Zaply to develop a SAAS Web App for the food industry called Recipe2Basket"
+        tags={[
+          "Fullstack",
+          "Javascript",
+          "HTML5",
+          "CSS",
+          "React",
+          "styled-components",
+          "Material UI",
+          "Node",
+          "Express",
+          "Adonis",
+          "MySQL",
+        ]}
+        Img={zaplyImg}
+      />
       <SingleProject
         title="Rafael Muttoni - Portfolio"
         url="https://rafaelmuttoni.com"
@@ -147,8 +146,7 @@ const Projects = () => {
           "GraphQL",
           "styled-components",
         ]}
-        dkImg={portfolioDkImg}
-        mbImg={portfolioMbImg}
+        Img={portfolioImg}
       />
       <SingleProject
         title="Dynamic's Website"
@@ -164,8 +162,7 @@ const Projects = () => {
           "Tailwindcss",
           "Lottie",
         ]}
-        dkImg={dynamicDkImg}
-        mbImg={dynamicMbImg}
+        Img={dynamicImg}
       />
       <SingleProject
         title="Saúde dos Pés"
@@ -179,8 +176,7 @@ const Projects = () => {
           "HTML5",
           "CSS",
         ]}
-        dkImg={fabioDkImg}
-        mbImg={fabioMbImg}
+        Img={fabioImg}
       />
       <SingleProject
         title="Pokémon Searcher"
@@ -195,8 +191,7 @@ const Projects = () => {
           "Axios",
           "styled-components",
         ]}
-        dkImg={pokemonDkImg}
-        mbImg={pokemonMbImg}
+        Img={pokemonImg}
       />
       <SingleProject
         title="Compound Interest Calculator"
@@ -212,8 +207,7 @@ const Projects = () => {
           "GraphQL",
           "styled-components",
         ]}
-        dkImg={compoundDkImg}
-        mbImg={compoundMbImg}
+        Img={compoundImg}
       />
     </S.ContentWrapper>
   )

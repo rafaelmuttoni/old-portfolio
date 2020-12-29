@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from "styled-components"
+import media from "styled-media-query"
 
 export const AboutWrapper = styled.div`
   max-width: 60vw;
@@ -7,14 +7,14 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   padding: 1rem 1rem 1rem 1rem;
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     max-width: 80vw;
     padding-top: 2rem;
   `}
 `
 
 export const AboutTitle = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
   padding-bottom: 0.8rem;
 `
@@ -24,7 +24,6 @@ export const AboutDescription = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
   padding-bottom: 0.8rem;
-
 `
 
 export const AboutSubtitle = styled.h2`
@@ -42,11 +41,11 @@ export const SkillsList = styled.ul`
   max-width: 60%;
   padding-bottom: 0.8rem;
 
-  ${media.lessThan('large') `
+  ${media.lessThan("large")`
     max-width: 75%;
   `}
 
-  ${media.lessThan('medium') `
+  ${media.lessThan("medium")`
     max-width: 90%;
   `}
 `
@@ -62,14 +61,14 @@ export const SkillsItem = styled.li`
   border-radius: 3px;
   font-weight: 500;
   font-size: 0.9rem;
-  box-shadow: 1px 1px 0 rgba(0,0,0,.25);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
 
   &:hover {
     background: var(--buttonsText);
     color: var(--buttons);
   }
 
-  ${media.lessThan('medium')`
+  ${media.lessThan("medium")`
     padding: 6px 5px 6px 5px;
     font-size: 0.7rem;
   `}

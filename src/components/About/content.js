@@ -1,3 +1,24 @@
-const skills = ['Front-end', 'HTML5', 'CSS', 'Javascript', 'ECMAScript 6', 'Responsive Design', 'Git', 'UNIX', 'React', 'Gatsby', 'GraphQL', 'Node', 'Bootstrap', 'styled-components', 'Tailwindcss']
+const skills = [
+  "Javascript",
+  "Python",
+  "HTML5",
+  "CSS",
+  "React",
+  "Next",
+  "Gatsby",
+  "Material UI",
+  "Bootstrap",
+  "styled-components",
+  "Tailwindcss",
+  "GraphQL",
+  "Node.js",
+  "Adonis",
+  "Express",
+  "MySQL",
+  "PostgreSQL",
+  "AWS",
+  "Git",
+  "UNIX",
+]
 
 export default skills

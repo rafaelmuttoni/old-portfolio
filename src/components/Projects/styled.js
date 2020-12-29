@@ -24,7 +24,7 @@ export const ProjectsWrapper = styled.div`
 `
 
 export const ProjectsTitle = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
   /* border-left: 2px solid var(--buttons);
   padding-left: 1rem; */
@@ -37,10 +37,6 @@ export const ProjectsDescription = styled.p`
   /* border-bottom: 2px solid var(--buttons); */
   /* padding-left: 1rem; */
   padding-bottom: 0.8rem;
-
-  .outdated {
-    font-size: 0.6em;
-  }
 `
 
 export const ProjectLink = styled(AniLink)`
