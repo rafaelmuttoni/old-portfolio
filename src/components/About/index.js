@@ -45,9 +45,9 @@ const About = () => (
       ))}
     </S.SkillsList>
     <S.AboutDescription>
-      these I have experience with but everything is learnable{" "}
-      <span role="img" aria-label="Nerd face">
-        🤓
+      it's always a matter of finding the right tool for the job{" "}
+      <span role="img" aria-label="Hammer">
+        🛠️
       </span>
     </S.AboutDescription>
   </S.AboutWrapper>
