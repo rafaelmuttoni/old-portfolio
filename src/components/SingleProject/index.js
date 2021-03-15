@@ -3,10 +3,13 @@ import React from "react"
 import * as S from "./styled"
 
 const SingleProject = ({ title, url, description, tags, Img }) => {
+
+  const noLink = url === "javascript:void(0)"
+
   return (
     <S.ContentWrapper>
       <S.DevicesWrapper>
-        <S.DesktopWrapper href={url} target="_blank">
+        <S.DesktopWrapper href={url} target={noLink ? "" : "_blank"}>
           <S.ProjectBar>
             <S.BallsWrapper>
               <S.RedBall />

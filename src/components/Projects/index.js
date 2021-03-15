@@ -195,7 +195,7 @@ const Projects = () => {
       />
       <SingleProject
         title="Compound Interest Calculator"
-        url="https://juroscompostos.netlify.com/"
+        url="javascript:void(0)"
         description="A compound interest calculator for your long term investments."
         tags={[
           "Front-end",
