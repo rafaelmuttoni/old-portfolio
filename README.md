@@ -1,17 +1,17 @@
 ![Netlify Status](https://api.netlify.com/api/v1/badges/6ec35d25-adc1-40e7-be1e-4d73e816d5fa/deploy-status)
 <p>
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rafaelmuttoni/rafaelmuttoni.com.svg">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rafaelmuttoni/old-portfolio.svg">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rafaelmuttoni/rafaelmuttoni.com.svg">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rafaelmuttoni/old-portfolio.svg">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/rafaelmuttoni/rafaelmuttoni.com.svg">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/rafaelmuttoni/old-portfolio.svg">
 
-  <a href="https://github.com/rafaelmuttoni/rafaelmuttoni.com/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/rafaelmuttoni/rafaelmuttoni.com.svg">
+  <a href="https://github.com/rafaelmuttoni/old-portfolio/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/rafaelmuttoni/old-portfolio.svg">
   </a>
 
-  <a href="https://github.com/rafaelmuttoni/rafaelmuttoni.com/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/rafaelmuttoni/rafaelmuttoni.com.svg">
+  <a href="https://github.com/rafaelmuttoni/old-portfolio/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/rafaelmuttoni/old-portfolio.svg">
   </a>
 </p>
 
@@ -37,10 +37,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/rafaelmuttoni/rafaelmuttoni.com
+$ git clone https://github.com/rafaelmuttoni/old-portfolio
 
 # Go into the repository
-$ cd rafaelmuttoni.com
+$ cd old-portfolio
 
 # Install dependencies
 $ yarn
